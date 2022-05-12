@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+header{
+    background-color: white;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    font-family: "Lobster", sans-serif;
+    width: 170px;
+    margin-left: 20px;
+    font-size: 40px;
+}
+
+.menu{
+    display: inline-block;
+    text-align: center;
+    margin-right: 25px;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+
+.menu li a{
+    color: grey;
+    padding: 0 20px;
+    display: block;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+
+.efect{
+    position: relative;
+}
+
+.efect::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.efect:hover{
+    color: black;
+}
+
+.efect:hover::after{
+    width: 100%;
+    
+}
+
+.mantenimiento{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 80px;
+    color: crimson;
+    text-align: center;
+    bottom: 300px;
+    position: absolute;
+}
